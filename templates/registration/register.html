@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}Ro'yhatdan o'tish{% endblock title %}
+
+{% block content %}
+<div class="text-center">
+    <h1>Ro'yhatdan o'tish</h1>
+    <form method="post">{% csrf_token %}
+        {{ user_form.as_p }}
+        <button type="submit" class="btn btn-success">Yuborish</button>
+        <p>Akkauntingiz bormi? <a href="{% url 'login' %}" style="color: blue">Kirish</a></p>
+    </form>
+</div>
+{% endblock content %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}Ro'yhatdan o'tish{% endblock title %}
+
+{% block content %}
+<div class="text-center">
+    <p>{{ new_user.first_name }} siz muvaffaqiyatli ro'yxatdan o'tdingiz.</p>
+    <h4>Saytga kirish uchun <a href="{% url 'login' %}">login</a> tugmasini bosing.</h4>
+</div>
+{% endblock content %}

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Yangilikni tahrirlash{% endblock title %}
+
+
+{% block content %}
+    <div class="text-center">
+        <h3>Yangilikni tahrirlash</h3>
+        <form method="post">{% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" class="btn btn-success" value="Saqlash">
+        </form>
+    </div>
+{% endblock content %}

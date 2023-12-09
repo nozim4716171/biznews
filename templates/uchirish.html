@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Yangilik o'chirish{% endblock title %}
+
+
+{% block content %}
+    <div class="text-center">
+        <h3>Yangilik o'chirish</h3>
+        <form method="post">{% csrf_token %}
+            <p>Ushbu {{ yangiliklar.nomi }} yangilikni o'chirishni xohlaysizmi?</p>
+            {{ form }}
+            <input type="submit" class="btn btn-danger" value="O'chirish">
+        </form>
+    </div>
+{% endblock content %}

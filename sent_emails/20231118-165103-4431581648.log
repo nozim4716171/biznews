@@ -1,0 +1,15 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: Password reset on 127.0.0.1:8000
+From: webmaster@localhost
+To: nozimjonhamdamov28@gmail.com
+Date: Sat, 18 Nov 2023 11:51:03 -0000
+Message-ID: <170030826338.16803.12026725673488478353@MacBook-Pro.local>
+
+Sizning emailingizga parolni qayta tiklash uchun kiritildi. Parolni qayta tiklash uchun quyidagi linkka kiriting:
+http:/127.0.0.1:8000/account/password_reset/Nw/bxvdh3-585f91dfb76055f05f53b2e50912e05d/
+Sizning username: admin6
+
+
+-------------------------------------------------------------------------------

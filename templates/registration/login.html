@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}Saytga kirish{% endblock title %}
+
+{% block content %}
+<div class="text-center">
+    <h1>Kirish</h1>
+    <form method="post">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-success">Kirish</button>
+        <a href="{% url 'password_reset' %}"><p>Parolni unutdingizmi?</p></a>
+    </form>
+</div>
+{% endblock content %}

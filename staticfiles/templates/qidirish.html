@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Qidiruv natijalari{% endblock title %}
+
+
+{% block content %}
+    <h3>Qidiruv natijasi</h3>
+    {% for i in qidirish_natijasi %}
+        <a href="{% url 'newsdetail' i.slug %}"><img src="{{ i.rasm.url }}" alt=""></a>
+        <a href="{% url 'newsdetail' i.slug %}"><h3>{{ i.nomi }}</h3></a>
+        <p>{{ i.matn|truncatewords:10}}</p>
+    {% empty %}
+        <h4>Bunday ma'lumot topilmadi.</h4>
+    {% endfor %}
+
+{% endblock content %}

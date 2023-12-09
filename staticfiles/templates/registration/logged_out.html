@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block title %}Saytdan chiqish{% endblock title %}
+
+{% block content %}
+    <h2>Saytdan chiqish</h2>
+    <p>Siz saytdan chiqdingiz.Kirish uchun <a href="{% url 'login' %}">kirish</a> tugmasini bosing</p>
+{% endblock content %}
